@@ -83,17 +83,17 @@ if ModelPrediction in [1, 2]:
 
 The email part is not necessary, but as the ML model essentially acts as the "on" switch for my code everyday, I like to get an email.
 
-In my Ninjatrader C# strategy, I add the following pieces of code
+# In my Ninjatrader C# strategy, I add the following pieces of code
 
     
-  private string filePath = @"C:\Users\X\Documents\NQDataML\updated_df_model15m.csv";
-		int prediction;
-		private Dictionary<DateTime, int> predictions = new Dictionary<DateTime, int>();
-  private int lastPrediction = 0;
-  private DateTime lastPredictionTime;
-		int currentPrediction;
-
-  private void LoadPredictionsFromFile()
+	  private string filePath = @"C:\Users\X\Documents\NQDataML\updated_df_model15m.csv";
+			int prediction;
+			private Dictionary<DateTime, int> predictions = new Dictionary<DateTime, int>();
+	  private int lastPrediction = 0;
+	  private DateTime lastPredictionTime;
+			int currentPrediction;
+	
+	  private void LoadPredictionsFromFile()
         {
             if (!File.Exists(filePath))
             {
