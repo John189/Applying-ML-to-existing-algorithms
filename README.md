@@ -162,8 +162,9 @@ In my Ninjatrader C# strategy, I add the following pieces of code
 			prediction = GetPredictionForCurrentTime();
 			Print("Current prediction: " + prediction);
 
-   // Your code here
+   # Your code here
 
+# Include the prediction in your entry conditions
 
   if (your short entry conditions && currentPrediction == 1)
 						{
