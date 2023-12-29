@@ -162,20 +162,20 @@ In my Ninjatrader C# strategy, I add the following pieces of code
 			prediction = GetPredictionForCurrentTime();
 			Print("Current prediction: " + prediction);
 
-   # Your code here
+
 
 # Include the prediction in your entry conditions
 
-  if (your short entry conditions && currentPrediction == 1)
-						{
-       // Enter the short trade
-       shortOrder = EnterShortLimit
-       }
-
-  if (your long entry conditions && currentPrediction == 2)
-						{
-       // Enter the long trade
-       longOrder = EnterLongLimit
-       }
+	  if (your short entry conditions && currentPrediction == 1)
+							{
+	       // Enter the short trade
+	       shortOrder = EnterShortLimit
+	       }
+	
+	  if (your long entry conditions && currentPrediction == 2)
+							{
+	       // Enter the long trade
+	       longOrder = EnterLongLimit
+	       }
 
  
